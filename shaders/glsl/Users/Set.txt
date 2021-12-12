@@ -38,6 +38,11 @@
 //区块加载动画
 //chunk loading animation
 
+#define VEGETATION_ANIMATION 1
+//Waving leaves
+//1 on
+//2 off
+
 
 
 //Redstone Tools
@@ -576,7 +581,23 @@
 //cloud size
 
 
-
+#if VEGETATION_ANIMATION == 1
+#define WIND_SPEED 8.0
+#define WIND_WAVES_LENGTH 0.25
+#define WIND_WAVES_AMPLITUDE 0.03125
+#define WIND_IMPULSES_SPEED 1.0
+#define WIND_IMPULSE_CUT 4.0 // higher number - shorter impulse
+#define RAIN_WIND_AMPLITUDE_BOOST 1.0
+#define RAIN_WIND_SPEED_BOOST 2.0
+#else
+#define WIND_SPEED NaN
+#define WIND_WAVES_LENGTH NaN
+#define WIND_WAVES_AMPLITUDE NaN
+#define WIND_IMPULSES_SPEED NaN
+#define WIND_IMPULSE_CUT NaN // higher number - shorter impulse
+#define RAIN_WIND_AMPLITUDE_BOOST NaN
+#define RAIN_WIND_SPEED_BOOST NaN
+#endif
 
 
 #if ALPHA_PBR_STYLE == 1
