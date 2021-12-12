@@ -1403,7 +1403,8 @@ vec3 chunk_animation(vec3 chupos, float rcfa) {
 	chupos.y += 128.0 * (rcfa + log(1.0 - rcfa));
 	return chupos;
 }
-
+float isLeaves;
+float isPlantTop;
 #if VEGETATION_ANIMATION
 float calculateVegetationAnimation (vec3 position, float isRain) {
     vec3 correctedRawPos = position / 2.5463;//2.55 - size of chunk (prevent leaves detaching)
