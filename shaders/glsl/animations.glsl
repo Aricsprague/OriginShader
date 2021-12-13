@@ -1,3 +1,5 @@
+// Referenced jebbyk/OSBES-minecraft-bedrock-edition-shader for waving animation
+
 #define WIND_SPEED 8.0
 #define WIND_WAVES_LENGTH 0.25
 #define WIND_WAVES_AMPLITUDE 0.03125
